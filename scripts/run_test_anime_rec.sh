@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=$1 python inference_rec.py \
+    --sample 30 \
+    --instance_per_image 1 \
+    --latent_dim 512 \
+    --size 1024 \
+    --output_size 512 \
+    --truncation 0.7 \
+    --start_from_latent_avg \
+    --seed 6002 \
+    --nb_layer 18 \
+    --original 1 \
+    --load_stylegan2 "pretrained_model/anime/danbooru_1024_white_finetune_ffhqtorch_100.pt" \
+    --save_path "./ckpts/ANIME_REC/inference/L3/danbooru_rec_real" \
+    --config "./ckpts/ANIME/ckpts/L2/L2_30000.pth" \
+    --rec_model "ckpts/ANIME_REC/ckpts/L2/L2_200000.pth" \
+    --edit_config "./edit_configs/anime/e4e_inc.yaml" \
+    --split \

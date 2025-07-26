@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=$1 python inference_rec.py \
+    --sample 30 \
+    --instance_per_image 1 \
+    --latent_dim 512 \
+    --size 1024 \
+    --output_size 512 \
+    --truncation 0.7 \
+    --start_from_latent_avg \
+    --seed 6002 \
+    --nb_layer 18 \
+    --original 1 \
+    --load_stylegan2 "./ckpts/alchemy_v3/1230_models/cat_models/cat_decoder_v3_1230.pt" \
+    --save_path "./ckpts/CAT_REC/inference/L4/cat2_mouth_20w_0.3_0.7" \
+    --config "./ckpts/alchemy_v3/1230_models/cat_models/cat_editor_v3_1230.pth" \
+    --rec_model "./ckpts/CAT_REC/ckpts/L4/L4_200000.pth" \
+    --edit_config "./edit_configs/cat/e4e_basic.yaml" \
+    --split
