@@ -29,3 +29,14 @@ Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
+## 🎞️ Edge Maps
+We provide edge maps extracted from the FFHQ dataset using the DexiNed algorithm, which you can use to test FFHQ images.
+```
+https://pan.baidu.com/s/1pPa7YVk_W3K4Ky2P5JjK8g?pwd=2296
+```
+## 💿 Pretrained Weights
+You can obtain the network weights trained on the 256* 256-pixel FFHQ dataset at the following link.
+```
+https://pan.baidu.com/s/19DZOitvfQGzONQAxz6lGrQ?pwd=2296
+```
